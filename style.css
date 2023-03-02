@@ -1,0 +1,35 @@
+#GFG { 
+    border: 2px solid black; 
+} 
+header{ 
+    color: green; 
+    text-align: center;
+} 
+.grid{
+    
+}
+.board{
+    grid-area: canvas;
+    width:600px;height:400px;position: relative;
+}
+.point{
+    cursor: pointer;
+    /* pointer-events: initial; */
+    background-color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    /* transform: translate(-50%,-50%); */
+}
+main{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "config canvas canvas"
+    "footer footer footer"
+    ;
+}
+.config{
+    grid-area: config;
+}
